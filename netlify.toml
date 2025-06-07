@@ -1,6 +1,8 @@
 [build]
-  command = "npm run build"
-  publish = "client/build"
+  base = "make/client"
+  publish = "build"
+  command = "npm install && npm run build"
+
 
 [[redirects]]
   from = "/*"
